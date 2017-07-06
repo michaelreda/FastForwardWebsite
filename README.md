@@ -1,5 +1,5 @@
 FastForwardWebsite
 
 michael:
-- loader
-- more about us slider
+- loader (percentage wraper div)
+- more about us slider (testimonials section)
