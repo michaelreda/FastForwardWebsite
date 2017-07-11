@@ -126,185 +126,154 @@ setTimeout(function(){
 
 <!-- about
 ================================================== -->
-<section id="about">
+<section id="about" style="padding-top:0px!important;">
 	<script>
 	$(document).ready(function(){
 
-	$(".pop-up-img").hide() ;
+		$(".pop-up-img").hide() ;
 
-	$( ".pop-up-icon" ).hover(
-	function() {
+		$( ".pop-up-icon" ).hover(
+			function() {
 
-			$(this).parent().animate({"padding-bottom" : "0" } , 300 );
-			$(this).next().show(500) ;
-	}, function() {
-			$(this).parent().animate({"padding-bottom" : "10vw" } , 300 );
+				$(this).parent().animate({"padding-bottom" : "0" } , 300 );
+				$(this).next().show(500) ;
+			}, function() {
+				$(this).parent().animate({"padding-bottom" : "10vw" } , 300 );
 				$(this).next().hide(500) ;
 
-	}
-	);
+			}
+		);
 
 
-	$(".pop-up-icon").click(function(){
-		if ( $(this).next().is(":hidden"))
-		{
-			$(".pop-up-img").hide();
-			$(".bgrid").animate({"padding-bottom" : "0" } , 300 );
-		}
-		else
+		$(".pop-up-icon").click(function(){
+			if ( $(this).next().is(":hidden"))
+			{
+				$(".pop-up-img").hide();
+				$(".bgrid").animate({"padding-bottom" : "0" } , 300 );
+			}
+			else
 			$(".bgrid").animate({"padding-bottom" : "10vw" } , 300 );
 			$(this).next().toggle(500) ;
 
-	});
+		});
 	});
 	</script>
-		<section id="about" data-parallax="scroll"  data-image-src="images/Tesxt.png"  data-natural-width=3000 data-natural-height=2000>
+	<section id="about" style="padding-top:0px!important;" data-parallax="scroll"  data-image-src="images/Tesxt.png"  data-natural-width=3000 data-natural-height=2000>
 
-				<div class="row about-intro">
+		<div class="row about-intro">
 
 
-				<div class="row about-how">
+			<div class="row about-how">
 
-						<h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>
+				<h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>
 
-						<div class="about-how-content" data-aos="fade-up">
-								<div class="about-how-steps block-1-2 block-tab-full group">
+				<div class="about-how-content" data-aos="fade-up">
+					<div class="about-how-steps block-1-2 block-tab-full group">
 
-					<div class="bgrid" >
-					<a  class="pop-up-icon" >
+						<div class="bgrid" >
+							<a  class="pop-up-icon" >
 
-							<img src="images/Login.png" > </img>
+								<img src="images/Login.png" > </img>
 
-					</a> 	<img class="pop-up-img" src="images/Page 1.png" alt="">
+							</a> 	<img class="pop-up-img" src="images/Page 1.png" alt="">
 							<br>
 							<h1> Step One: Login </h1>
-					</div>
-					<div class="bgrid" >
-					<a  class="pop-up-icon" >
+						</div>
+						<div class="bgrid" >
+							<a  class="pop-up-icon" >
 
-							<img src="images/CareerSim.png"> </img>
+								<img src="images/CareerSim.png"> </img>
 
-					</a> 	<img class="pop-up-img" src="images/Page 2.png" alt="">
-					<br>
+							</a> 	<img class="pop-up-img" src="images/Page 2.png" alt="">
+							<br>
 							<h1> Step Two: Choose Your Simulation </h1>
-					</div>
+						</div>
 
-					<div class="bgrid" >
-					<a  class="pop-up-icon" >
+						<div class="bgrid" >
+							<a  class="pop-up-icon" >
 
-							<img src="images/Company.png"> </img>
+								<img src="images/Company.png"> </img>
 
-					</a> 	<img class="pop-up-img" src="images/Page 3.png" alt="">
-					<h1> Step Three: Pick One Company To Simulate Proffession With  </h1>
-					</div>
+							</a> 	<img class="pop-up-img" src="images/Page 3.png" alt="">
+							<h1> Step Three: Pick One Company To Simulate Proffession With  </h1>
+						</div>
 
-					<div class="bgrid" >
+						<div class="bgrid" >
 
-					<a  class="pop-up-icon" >
+							<a  class="pop-up-icon" >
 
-							<img src="images/Filtericon.png"> </img>
+								<img src="images/Filtericon.png"> </img>
 
-					</a>  	<img class="pop-up-img" src="images/Page 4.png" alt="">
+							</a>  	<img class="pop-up-img" src="images/Page 4.png" alt="">
 
-					<h1> Step Four: Filter The Companies According To Your Preferances </h1>
-					</div>
+							<h1> Step Four: Filter The Companies According To Your Preferances </h1>
+						</div>
 
-									</section> <!-- end about -->
-
-									<!-- wish
-										================================================== -->
-
-									 <section id="wish">
-											 <div class="row"data-aos="fade-up">
-														<div class="col-full" data-aos="fade-up">
-																<h1 class="intro-header"  >MAKE A WISH</h1>
-																<h2 >SEND US YOUR DREAM</h2>
-																<p class="lead" data-aos="fade-up">
-																		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-																</p>
-
-												</div>
-												</div>
-
-																<div class="subscribe-form" data-aos="fade-up">
-
-																				<form method="post" id="mc-form" class="group" >
-
-																						<input type="text" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-
-																						<input type="button" name="subscribe" value="Send"  onclick="send()">
+					</section> <!-- end about -->
 
 
 
-																				</form>
 
-																		</div>
+
+					<!-- Testimonials Section
+					================================================== -->
+					<section id="testimonials" style="padding-top: 45px!important;">
+						<h1 class="intro-header" style="color:white;">MORE ABOUT US</h1>
+						<div id="mobile-frame">
+							<!-- <div class="row">
+							<div class="col-twelve">
+							<h3 class="intro-header" style="width:300px;margin:auto;" data-aos="fade-up">What They Say About Our App.</h3>
+						</div>
+					</div> -->
+
+					<div class="row owl-wrap">
+
+						<div id="testimonial-slider"  data-aos="fade-up">
+
+							<div class="slides owl-carousel">
+
+
+
+								<div>
+									<i class="fa fa-users slider-icon" aria-hidden="true"></i>
+									<h1 class="header counter-count">1226</h1>
+									<p class="slider-description">
+										Customers tried out career simulations
+									</p>
+								</div>
+
+								<div>
+									<img class="slider-img" src="images/head_icon.png"></img>
+									<h1 class="header"><span class="counter-count-fast">3</span>  YEARS</h1>
+									<p class="slider-description">
+										Of career simulation experience
+									</p>
 
 								</div>
+
 								<div>
-								</section><!-- end wish -->
+									<i class="fa fa-thumbs-up slider-icon" aria-hidden="true"></i>
+									<h1 class="header"> <span class="counter-count-decimal">8.7</span>/10</h1>
+									<p class="slider-description">
+										Average customer feedback
+									</p>
+								</div>
 
+								<div>
+									<i class="fa fa-handshake-o slider-icon" aria-hidden="true"></i>
+									<h1 class="header"><span class="counter-count">50</span>+</h1>
+									<p class="slider-description">
+										Partners
+									</p>
+								</div>
 
-
-									<!-- Testimonials Section
-									================================================== -->
-									<section id="testimonials" style="padding-top: 45px!important;">
-										<h1 class="intro-header" style="color:white;">MORE ABOUT US</h1>
-										<div id="mobile-frame">
-											<!-- <div class="row">
-											<div class="col-twelve">
-											<h3 class="intro-header" style="width:300px;margin:auto;" data-aos="fade-up">What They Say About Our App.</h3>
-										</div>
-									</div> -->
-
-									<div class="row owl-wrap">
-
-										<div id="testimonial-slider"  data-aos="fade-up">
-
-											<div class="slides owl-carousel">
-
-
-
-												<div>
-													<i class="fa fa-users slider-icon" aria-hidden="true"></i>
-													<h1 class="header counter-count">1226</h1>
-													<p class="slider-description">
-														Customers tried out career simulations
-													</p>
-												</div>
-
-												<div>
-													<img class="slider-img" src="images/head_icon.png"></img>
-													<h1 class="header"><span class="counter-count-fast">3</span>  YEARS</h1>
-													<p class="slider-description">
-														Of career simulation experience
-													</p>
-
-												</div>
-
-												<div>
-													<i class="fa fa-thumbs-up slider-icon" aria-hidden="true"></i>
-													<h1 class="header"> <span class="counter-count-decimal">8.7</span>/10</h1>
-													<p class="slider-description">
-														Average customer feedback
-													</p>
-												</div>
-
-												<div>
-													<i class="fa fa-handshake-o slider-icon" aria-hidden="true"></i>
-													<h1 class="header"><span class="counter-count">50</span>+</h1>
-													<p class="slider-description">
-														Partners
-													</p>
-												</div>
-
-												<div>
-													<img class="slider-img" src="images/custom_icon.png"></img>
-													<h1 class="header"><span class="counter-count-fast">12</span> +</h1>
-													<p class="slider-description">
-														Different careers simulated
-													</p>
-												</div>
+								<div>
+									<img class="slider-img" src="images/custom_icon.png"></img>
+									<h1 class="header"><span class="counter-count-fast">12</span> +</h1>
+									<p class="slider-description">
+										Different careers simulated
+									</p>
+								</div>
 
 
 
@@ -406,127 +375,77 @@ setTimeout(function(){
 				});
 			});
 			</script>
-
-
-			<!-- footer
+			<!-- download and contact us
 			================================================== -->
-			<footer>
+			<section id="download" data-image-src="images/2.png">
 
-				<div class="footer-main">
-					<div class="row">
+				<div class="row">
+					<div class="col-full">
+						<h1 class="intro-header"  data-aos="fade-up">Download Our App Today!</h1>
 
-						<div class="col-three md-1-3 tab-full footer-info">
+						<p class="lead" data-aos="fade-up">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+						</p>
 
-							<div class="footer-logo"></div>
+						<ul class="download-badges">
+							<li><a href="#" title="" class="badge-appstore"  data-aos="fade-up">App Store</a></li>
+							<li><a href="#" title="" class="badge-googleplay" data-aos="fade-up">Play Store</a></li>
+						</ul>
 
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
-							</p>
+					</div>
+				</div>
+			</br></br></br>
+			<div class="row">
 
-							<ul class="footer-social-list">
-								<li>
-									<a href="#"><i class="fa fa-facebook-square"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-behance"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-dribbble"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fa fa-instagram"></i></a>
-								</li>
-							</ul>
+				<div class="col-full">
+					<h1 class="intro-header"  data-aos="fade-up">CONTACT US</h1>
 
 
-						</div> <!-- end footer-info -->
-
-						<div class="col-three md-1-3 tab-1-2 mob-full footer-contact">
-
-							<h4>Contact</h4>
-
-							<p>
-								1600 Amphitheatre Parkway<br>
-								Mountain View, CA <br>
-								94043 US<br>
-							</p>
-
-							<p>
-								someone@dazzlesite.com <br>
-								Phone: (+63) 555 1212 <br>
-								Fax: (+63) 555 0100
-							</p>
-
-						</div> <!-- end footer-contact -->
-
-						<div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
-
-							<h4>Site Links</h4>
-
-							<ul class="list-links">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Terms</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-
-						</div> <!-- end footer-site-links -->
-
-						<div class="col-four md-1-2 tab-full footer-subscribe">
-
-							<h4>Our Newsletter</h4>
-
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-							<div class="subscribe-form">
-
-								<form id="mc-form" class="group" novalidate="true">
-
-									<input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-
-									<input type="submit" name="subscribe" value="Send">
-
-									<label for="mc-email" class="subscribe-message"></label>
-
-								</form>
-
-							</div>
-
-						</div> <!-- end footer-subscribe -->
-
-					</div> <!-- /row -->
-				</div> <!-- end footer-main -->
 
 
-				<div class="footer-bottom">
+					<div class="icons" data-aos="fade-up">
+						<a href="https://www.facebook.com/fastforwardsim/"  target="_blank"><img src="images/FBICON.png"/>   </a>
+						<a href=""  target="_blank"><img src="images/Instagram.png"/></a>
+						<a href="https://www.google.com/maps?ll=30.037291,31.201774&z=17&t=m&hl=en-US&gl=EG&mapclient=embed&q=69+Iran+Ad+Doqi+Giza+Governorate"  target="_blank"><img src="images/Location.png"/> </a>
+						<a href=""  target="_blank"><img src="images/Mobile.png"/>   </a>
+						<a href=""  target="_blank"><img src="images/Emailicon.png"/> </a></li>
+					</div>
+				</div></div>
 
-					<div class="row">
 
-						<div class="col-twelve">
-							<div class="copyright">
-								<span>© Copyright Dazzle 2017.</span>
-								<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
-							</div>
+			</section> <!-- end download -->
+			<!-- wish
+			================================================== -->
 
-							<div id="go-top">
-								<a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up"></i></a>
-							</div>
-						</div>
+			<section id="wish">
+				<div class="row"data-aos="fade-up">
+					<div class="col-full" data-aos="fade-up">
+						<h1 class="intro-header"  >MAKE A WISH</h1>
+						<h2 >SEND US YOUR DREAM</h2>
+						<p class="lead" data-aos="fade-up">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+						</p>
 
-					</div> <!-- end footer-bottom -->
+					</div>
+				</div>
+
+				<div class="subscribe-form" data-aos="fade-up">
+
+					<form method="post" id="mc-form" class="group" >
+
+						<input type="text" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+
+						<input type="button" name="subscribe" value="Send"  onclick="send()">
+
+
+
+					</form>
 
 				</div>
 
-			</footer>
-
-			<div id="preloader">
-				<div id="loader"></div>
 			</div>
+			<div>
+			</section><!-- end wish -->
 
 			<!-- Java Script
 			================================================== -->
