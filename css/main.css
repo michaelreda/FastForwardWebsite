@@ -2952,70 +2952,98 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 
 
-#download {
-	background-image: url ("images/1.png") ;
+ #download {
 
-	background: #F85A51;
-	color: #E8F7F9;
-	padding-top: 12rem;
-	padding-bottom: 12rem;
-	text-align: center;
-}
+	 background: #F85A51;
+	 display:block;
+	 color: #E8F7F9;
+	 padding-top: 12rem;
+	 padding-bottom: 12rem;
+	 text-align: center;
+ }
 
-#download h1 {
-	color: #ffffff;
-}
+ #download h1 {
+	 color: #ffffff;
+ }
 
 
-#download h1::before {
-	background-color: #2a9038;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	transform: translateX(-50%);
-}
+ #download h1::before {
+	 background-color: #2a9038;
+	 left: 50%;
+	 -webkit-transform: translateX(-50%);
+	 -ms-transform: translateX(-50%);
+	 transform: translateX(-50%);
+ }
 
-#download .lead {
-	color: #E8F7F9;
-	margin-top: 4.8rem;
-}
+ #download .lead {
+	 color: #E8F7F9;
+	 margin-top: 4.8rem;
+ }
 
-}
-#download .row {
-	max-width: 800px;
-}
+ }
+ #download .row {
+	 max-width: 800px;
+		 text-align: center;
+	 list-style: none;
+	 margin: 0;
+ }
 
-#download .download-badges {
-	list-style: none;
-	margin: 0;
-	text-align: center;
-}
+ #download .download-badges {
+	 list-style: none;
+	 margin: 0;
+	 text-align: center;
+ }
 
-#download .download-badges li {
-	display: inline-block;
-	margin: 0 7.5px;
-	padding-left: 0;
-}
+ #download .download-badges2 {
+	 list-style: none;
+	 margin: 0;
+	 text-align: center;
+	 width:10%;
+	 height:10%;
+ }
 
-#download .download-badges li a {
-	display: block;
-	width: 230px;
-	height: 71px;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 230px 71px;
-}
+ #download .icons {
+	 width:100%;
+	 list-style-type:none;
+		margin: 0;
+	 text-align: center;
+		margin: auto;
+		 text-align: center;
+		 display:block inline;
+		 float:left;
+ }
+ #download .icons a img{
+	 display:block inline;
 
-#download .download-badges li a.badge-appstore {
-	background-image: url("../images/appstore.png");
-}
+	 width:8rem;
+	 height:8rem;
+	 margin:auto;
+ }
+ #download .download-badges li {
+	 display: inline-block;
+	 margin: 0 7.5px;
+	 padding-left: 0;
+ }
 
-#download .download-badges li a.badge-googleplay {
-	background-image: url("../images/google-play.png");
-}
+ #download .download-badges li a {
+	 display: block;
+	 width: 230px;
+	 height: 71px;
+	 font: 0/0 a;
+	 text-shadow: none;
+	 color: transparent;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 background-size: 230px 71px;
+ }
+
+ #download .download-badges li a.badge-appstore {
+	 background-image: url("../images/appstore.png");
+ }
+
+ #download .download-badges li a.badge-googleplay {
+	 background-image: url("../images/google-play.png");
+ }
 
 
 /* -------------------------------------------------------------------
