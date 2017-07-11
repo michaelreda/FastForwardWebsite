@@ -20,7 +20,7 @@
  *  13. testimonials
  *  14. download
  *  15. footer styles
- *
+ *  16. wish
  * =================================================================== */
 
 
@@ -2747,7 +2747,13 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   top: .3rem;
 }
 
+#testimonial-slider p::before {
+  content: '\201C';
+}
 
+#testimonial-slider p::after {
+  content: '\201D';
+}
 
 #testimonial-slider .testimonial-author {
   margin-top: 4.2rem;
@@ -2910,7 +2916,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
  
 #download {
-  background: #F85A51;
+	
+  background: #F85A51 url("../images/2.png")repeat 0 0;
+  display:block;
   color: #E8F7F9;
   padding-top: 12rem;
   padding-bottom: 12rem;
@@ -2938,6 +2946,9 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 #download .row {
   max-width: 800px;
+    text-align: center;
+	list-style: none;
+  margin: 0;
 }
 
 #download .download-badges {
@@ -2946,6 +2957,31 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   text-align: center;
 }
 
+#download .download-badges2 {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  width:10%;
+  height:10%;
+}
+
+#download .icons {
+	width:100%;
+	list-style-type:none;
+	 margin: 0;
+  text-align: center;
+   margin: auto;
+	  text-align: center;
+	  display:block inline;
+	  float:left;
+}
+#download .icons a img{
+	display:block inline;
+	
+	width:8rem;
+	height:8rem;
+	margin:auto;
+}
 #download .download-badges li {
   display: inline-block;
   margin: 0 7.5px;
@@ -3146,7 +3182,7 @@ footer ul a:visited {
   width: 100%;
 }
 
-.footer-subscribe #mc-form input[type="email"] {
+.footer-subscribe #mc-form input[type="text"] {
   width: 100%;
   height: 5.4rem;
   padding: 1.2rem 100px 1.2rem 60px;
@@ -3160,7 +3196,7 @@ footer ul a:visited {
   color: #ffffff;
 }
 
-.footer-subscribe #mc-form input[type=submit] {
+.footer-subscribe #mc-form input[type=button] {
   position: absolute;
   top: 0;
   right: 0;
@@ -3347,6 +3383,127 @@ footer ul a:visited {
     display: none;
   }
 }
+
+/* ===================================================================
+ *  16. wish - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+ 
+#wish {
+
+  background: #FFFFFF  url("../images/2.png")repeat 0 0;
+  color: #E8F7F9;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  text-align: center;
+}
+
+#wish h1 {
+  color: #000000;
+ 
+}
+#wish h2{
+	
+	 font-size:1.5rem;
+	font-weight: normal;
+}
+
+#wish h1::before {
+  background-color: #2a9038;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#wish .lead {
+  color: #000000;
+  margin-top: 4.8rem;
+}
+
+}
+#wish .row {
+  max-width: 800px;
+  text-align:centre;
+}
+
+
+
+.subscribe-form {
+ margin:auto;
+  padding: 0;
+  position: relative;
+  width:50%;
+  
+}
+
+.subscribe-form #mc-form {
+  width: 100%;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.subscribe-form #mc-form input[type="text"] {
+  width: 65%;
+  height: 5.4rem;
+
+  margin-bottom: 1.8rem;
+  color: #000000;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.subscribe-form #mc-form input[type="text"]:focus {
+  color: #000000;
+  border-radius: 0px 0px 0px 0px;
+  
+}
+
+.subscribe-form #mc-form input[type="button"] {
+  position: absolute;
+  width:35%;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  background: #000000;
+   border-color: #000000;
+  padding: 0 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.subscribe-form #mc-form label {
+  color: #ffffff;
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.3rem;
+  padding: 0 2rem;
+}
+
+.subscribe-form #mc-form label i {
+  padding-right: 6px;
+}
+
+.subscribe-form #mc-form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.subscribe-form #mc-form :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+  /* Firefox 18- */
+}
+
+.subscribe-form #mc-form ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+  /* Firefox 19+ */
+}
+
+.subscribe-form #mc-form :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.subscribe-form #mc-form .placeholder {
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/*---------------------------------------------*/
+
 
 
 /*# sourceMappingURL=main.css.map */
