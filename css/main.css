@@ -2784,13 +2784,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 	top: .3rem;
 }
 
-#testimonial-slider p::before {
-	content: '\201C';
-}
-
-#testimonial-slider p::after {
-	content: '\201D';
-}
 
 #testimonial-slider .testimonial-author {
 	margin-top: 4.2rem;
