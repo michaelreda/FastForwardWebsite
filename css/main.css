@@ -3394,4 +3394,125 @@ footer ul a:visited {
 }
 
 
+/* ===================================================================
+ *  16. wish - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+ 
+#wish {
+
+  background: #FFFFFF  url("../images/2.png")repeat 0 0;
+  color: #E8F7F9;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  text-align: center;
+}
+
+#wish h1 {
+  color: #000000;
+ 
+}
+#wish h2{
+	
+	 font-size:1.5rem;
+	font-weight: normal;
+}
+
+#wish h1::before {
+  background-color: #2a9038;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#wish .lead {
+  color: #000000;
+  margin-top: 4.8rem;
+}
+
+}
+#wish .row {
+  max-width: 800px;
+  text-align:centre;
+}
+
+
+
+.subscribe-form {
+ margin:auto;
+  padding: 0;
+  position: relative;
+  width:50%;
+  
+}
+
+.subscribe-form #mc-form {
+  width: 100%;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.subscribe-form #mc-form input[type="text"] {
+  width: 65%;
+  height: 5.4rem;
+
+  margin-bottom: 1.8rem;
+  color: #000000;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.subscribe-form #mc-form input[type="text"]:focus {
+  color: #000000;
+  border-radius: 0px 0px 0px 0px;
+  
+}
+
+.subscribe-form #mc-form input[type="button"] {
+  position: absolute;
+  width:35%;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  background: #000000;
+   border-color: #000000;
+  padding: 0 0px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.subscribe-form #mc-form label {
+  color: #ffffff;
+  font-family: "montserrat-regular", sans-serif;
+  font-size: 1.3rem;
+  padding: 0 2rem;
+}
+
+.subscribe-form #mc-form label i {
+  padding-right: 6px;
+}
+
+.subscribe-form #mc-form ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.subscribe-form #mc-form :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+  /* Firefox 18- */
+}
+
+.subscribe-form #mc-form ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+  /* Firefox 19+ */
+}
+
+.subscribe-form #mc-form :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.subscribe-form #mc-form .placeholder {
+  color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/*---------------------------------------------*/
+
+
 /*# sourceMappingURL=main.css.map */
