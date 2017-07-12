@@ -91,19 +91,17 @@ setTimeout(function(){
 
 <!-- home
 ================================================== -->
-<section id="home" data-parallax="scroll" style="z-index:0!important" data-image-src="images/TEst2.png"  data-natural-width=3000 data-natural-height=2000>
-	<div class="home-content">
+<section id="wish" data-parallax="scroll" style="z-index:0!important" data-image-src="images/TEst2.png"  data-natural-width=3000 data-natural-height=2000>
+   
+        <div class="row">
+            <div class="col-full" >
+    <div class="row">
 
 
-		<div class="row contents">
-			<div class="home-content-left">
+		<div class="col-full">
 
-				<img src="images/Page 1.png" style="height:50%; width: 50% ; "  >
-
-			</div>
-
-			<div class="home-image-right">
-				<img src = "images/NewLogo.png"  width="3000" height = "3000">  </img>
+				
+				<img src = "images/NewLogo.png"  width="2200" height = "2200" style="height:40%; width: 40% ; ">  </img>
 
 				<div class="buttons" >
 					<a href="#download" class="smoothscroll button stroke">
@@ -114,7 +112,6 @@ setTimeout(function(){
 						<span class="icon-play" aria-hidden="true"></span>
 						Watch Video
 					</a>
-				</div>
 			</div>
 		</div>
 
@@ -122,92 +119,7 @@ setTimeout(function(){
 </section> <!-- end home -->
 
 
-<!-- about
-================================================== -->
-<section id="about" style="padding-top:0px!important;">
-	<script>
-	$(document).ready(function(){
 
-		$(".pop-up-img").hide() ;
-
-		$( ".pop-up-icon" ).hover(
-			function() {
-
-				$(this).parent().animate({"padding-bottom" : "0" } , 300 );
-				$(this).next().show(500) ;
-			}, function() {
-				$(this).parent().animate({"padding-bottom" : "10vw" } , 300 );
-				$(this).next().hide(500) ;
-
-			}
-		);
-
-
-		$(".pop-up-icon").click(function(){
-			if ( $(this).next().is(":hidden"))
-			{
-				$(".pop-up-img").hide();
-				$(".bgrid").animate({"padding-bottom" : "0" } , 300 );
-			}
-			else
-			$(".bgrid").animate({"padding-bottom" : "10vw" } , 300 );
-			$(this).next().toggle(500) ;
-
-		});
-	});
-	</script>
-	<section id="about" style="padding-top:0px!important;" data-parallax="scroll"  data-image-src="images/Tesxt.png"  data-natural-width=3000 data-natural-height=2000>
-
-		<div class="row about-intro">
-
-
-			<div class="row about-how">
-
-				<h1 class="intro-header" data-aos="fade-up">How The App Works?</h1>
-
-				<div class="about-how-content" data-aos="fade-up">
-					<div class="about-how-steps block-1-2 block-tab-full group">
-
-						<div class="bgrid" >
-							<a  class="pop-up-icon" >
-
-								<img src="images/Login.png" > </img>
-
-							</a> 	<img class="pop-up-img" src="images/Page 1.png" alt="">
-							<br>
-							<h1> Step One: Login </h1>
-						</div>
-						<div class="bgrid" >
-							<a  class="pop-up-icon" >
-
-								<img src="images/CareerSim.png"> </img>
-
-							</a> 	<img class="pop-up-img" src="images/Page 2.png" alt="">
-							<br>
-							<h1> Step Two: Choose Your Simulation </h1>
-						</div>
-
-						<div class="bgrid" >
-							<a  class="pop-up-icon" >
-
-								<img src="images/Company.png"> </img>
-
-							</a> 	<img class="pop-up-img" src="images/Page 3.png" alt="">
-							<h1> Step Three: Pick One Company To Simulate Proffession With  </h1>
-						</div>
-
-						<div class="bgrid" >
-
-							<a  class="pop-up-icon" >
-
-								<img src="images/Filtericon.png"> </img>
-
-							</a>  	<img class="pop-up-img" src="images/Page 4.png" alt="">
-
-							<h1> Step Four: Filter The Companies According To Your Preferances </h1>
-						</div>
-
-					</section> <!-- end about -->
 
 
 
@@ -222,7 +134,7 @@ setTimeout(function(){
 
 					<div class="row owl-wrap">
 
-						<div id="testimonial-slider"  data-aos="fade-up">
+						<div id="testimonial-slider"  >
 
 							<div class="slides owl-carousel">
 
@@ -290,7 +202,7 @@ setTimeout(function(){
 			}
 
 			#testimonials {
-				background-image: url("images/background_with_texture.png");
+                background-color:#f85a51 ;
 			}
 			#mobile-frame{
 				background-image: url("images/mobile frame.png");
@@ -369,21 +281,111 @@ setTimeout(function(){
 				});
 			});
 			</script>
+            
+            
+            
+            <!-- about
+             ================================================== -->
+            <section id="about" style="padding-top:0px!important;">
+                <script>
+                    $(document).ready(function(){
+                                      
+                                      $(".pop-up-img").hide() ;
+                                      
+                                      $( ".pop-up-icon" ).hover(
+                                                                function() {
+                                                                
+                                                                $(this).parent().animate({"padding-bottom" : "0" } , 300 );
+                                                                $(this).next().show(500) ;
+                                                                }, function() {
+                                                                $(this).parent().animate({"padding-bottom" : "10vw" } , 300 );
+                                                                $(this).next().hide(500) ;
+                                                                
+                                                                }
+                                                                );
+                                      
+                                      
+                                      $(".pop-up-icon").click(function(){
+                                                              if ( $(this).next().is(":hidden"))
+                                                              {
+                                                              $(".pop-up-img").hide();
+                                                              $(".bgrid").animate({"padding-bottom" : "0" } , 300 );
+                                                              }
+                                                              else
+                                                              $(".bgrid").animate({"padding-bottom" : "10vw" } , 300 );
+                                                              $(this).next().toggle(500) ;
+                                                              
+                                                              });
+                                      });
+                    </script>
+                <section id="about" style="padding-top:0px!important;" data-parallax="scroll"  data-image-src="images/Tesxt.png"  data-natural-width=3000 data-natural-height=2000>
+                    
+                    <div class="row about-intro">
+                        
+                        
+                        <div class="row about-how">
+                            
+                            <h1 class="intro-header" >How The App Works?</h1>
+                            
+                            <div class="about-how-content" >
+                                <div class="about-how-steps block-1-2 block-tab-full group">
+                                    
+                                    <div class="bgrid" >
+                                        <a  class="pop-up-icon" >
+                                            
+                                            <img src="images/Login.png" > </img>
+                                            
+                                        </a> 	<img class="pop-up-img" src="images/Page 1.png" alt="">
+                                            <br>
+                                            <h1> Step One: Login </h1>
+                                            </div>
+                                    <div class="bgrid" >
+                                        <a  class="pop-up-icon" >
+                                            
+                                            <img src="images/CareerSim.png"> </img>
+                                            
+                                        </a> 	<img class="pop-up-img" src="images/Page 2.png" alt="">
+                                            <br>
+                                            <h1> Step Two: Choose Your Simulation </h1>
+                                            </div>
+                                    
+                                    <div class="bgrid" >
+                                        <a  class="pop-up-icon" >
+                                            
+                                            <img src="images/Company.png"> </img>
+                                            
+                                        </a> 	<img class="pop-up-img" src="images/Page 3.png" alt="">
+                                            <h1> Step Three: Pick One Company To Simulate Proffession With  </h1>
+                                            </div>
+                                    
+                                    <div class="bgrid" >
+                                        
+                                        <a  class="pop-up-icon" >
+                                            
+                                            <img src="images/Filtericon.png"> </img>
+                                            
+                                        </a>  	<img class="pop-up-img" src="images/Page 4.png" alt="">
+                                            
+                                            <h1> Step Four: Filter The Companies According To Your Preferances </h1>
+                                            </div>
+                                    
+                                    </section> <!-- end about -->
+                
 			<!-- download and contact us
 			================================================== -->
 			<section id="download" data-image-src="images/2.png">
 
 				<div class="row">
 					<div class="col-full">
-						<h1 class="intro-header"  data-aos="fade-up">Download Our App Today!</h1>
+						<h1 class="intro-header"  >Download Our App Today!</h1>
 
-						<p class="lead" data-aos="fade-up">
+						<p class="lead" >
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
 						</p>
 
 						<ul class="download-badges">
-							<li><a href="#" title="" class="badge-appstore"  data-aos="fade-up">App Store</a></li>
-							<li><a href="#" title="" class="badge-googleplay" data-aos="fade-up">Play Store</a></li>
+							<li><a href="#" title="" class="badge-appstore"  >App Store</a></li>
+							<li><a href="#" title="" class="badge-googleplay" >Play Store</a></li>
 						</ul>
 
 					</div>
@@ -392,9 +394,9 @@ setTimeout(function(){
 			<div class="row">
 
 				<div class="col-full">
-					<h1 class="intro-header"  data-aos="fade-up">CONTACT US</h1>
+					<h1 class="intro-header"  >CONTACT US</h1>
 
-					<div class="icons" data-aos="fade-up">
+					<div class="icons" >
 						<a href="https://www.facebook.com/fastforwardsim/"  target="_blank"><img src="images/FBICON.png"/>   </a>
 						<a href=""  target="_blank"><img src="images/Instagram.png"/></a>
 						<a href="https://www.google.com/maps?ll=30.037291,31.201774&z=17&t=m&hl=en-US&gl=EG&mapclient=embed&q=69+Iran+Ad+Doqi+Giza+Governorate"  target="_blank"><img src="images/Location.png"/> </a>
@@ -408,19 +410,21 @@ setTimeout(function(){
 			<!-- wish
 			================================================== -->
 
-			<section id="wish">
-				<div class="row"data-aos="fade-up">
-					<div class="col-full" data-aos="fade-up">
-						<h1 class="intro-header"  >MAKE A WISH</h1>
-						<h2 >SEND US YOUR DREAM</h2>
-						<p class="lead" data-aos="fade-up">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+			<section id="wish" >
+				<div class="row">
+					<div class="col-full" >
+						<h1 class="intro-header"  >SEND US YOUR DREAM PROFESSION</h1>
+						
+						<p class="lead" >
+							Send us the career you wish to simulate. Whatever it is.
+                            
+                            <BR>
 						</p>
 
 					</div>
 				</div>
 
-				<div class="subscribe-form" data-aos="fade-up">
+				<div class="subscribe-form" >
 
 					<form method="post" id="mc-form" class="group" >
 
